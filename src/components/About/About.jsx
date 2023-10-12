@@ -7,8 +7,8 @@ const About = () => {
             <img src="./img/img001.jpg" alt="" width={300} className='rounded-2xl'/>
         </picture>
         <div className='flex flex-col items-center text-center px-6'>
-            <p className='text-2xl font-semibold p-4'>À propos de moi</p>
-            <p className='text-xl font-semibold p-3 text-blue-700'>Un développeur front-end autodidacte qui cherche à développer davantage ses compétences</p>
+            <p className='text-2xl font-semibold pt-1'>À propos de moi</p>
+            <p className='text-xl font-semibold p-2 text-blue-700'>Un développeur front-end autodidacte qui cherche à développer davantage ses compétences</p>
             <p className='text-sm px-3 leading-6'>
                 En tant que développeur frontend <span className='underline font-semibold'>autodidacte</span>, je suis constamment en quête de perfectionnement. <br/>
                 Grâce à mes compétences approfondies en <span className='underline font-semibold p-0.5 bg-gray-800 rounded-lg text-white'>HTML</span>, <span className='underline font-semibold p-0.5 bg-gray-800 rounded-lg text-white'>CSS</span>, <span className='underline font-semibold p-0.5 bg-gray-800 rounded-lg text-white'>JavaScript</span>, <span className='underline font-semibold p-0.5 bg-gray-800 rounded-lg text-white'>React</span> et <span className='underline font-semibold p-0.5 bg-gray-800 rounded-lg text-white'>Tailwind CSS</span>, je suis capable de traduire des concepts créatifs en interfaces utilisateur interactives et réactives. <br/>

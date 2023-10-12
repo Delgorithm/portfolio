@@ -8,7 +8,7 @@ import About from '../About/About'
 const Header = () => {
     return (
         <main className='font-raleway'>
-            <div className='h-screen flex flex-col justify-center items-center'>
+            <div className='h-screen flex flex-col justify-center items-center -translate-y-8'>
                 <picture>
                     <img src="./img/pp00.jpeg" alt="" width={200} />
                 </picture>
