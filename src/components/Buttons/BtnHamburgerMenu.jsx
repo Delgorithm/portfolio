@@ -14,7 +14,7 @@ const BtnHamburgerMenu = () => {
     return (
         <div className="relative lg:hidden flex">
             <button 
-                className='text-white'
+                className='text-white p-2'
                 onClick={toggleMenu}
             >
             {!isOpen ? (

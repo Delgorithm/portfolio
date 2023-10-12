@@ -4,6 +4,7 @@ import BtnLinkedinProfil from '../Buttons/BtnLinkedinProfil'
 import Techstack from '../TechStack/Techstack'
 import { HiChevronDown } from 'react-icons/hi2'
 import About from '../About/About'
+import Projects from '../Projects/Projects'
 
 const Header = () => {
     return (
@@ -25,6 +26,7 @@ const Header = () => {
             </div>
             <Techstack />
             <About />
+            <Projects />
         </main>
     )
 }
