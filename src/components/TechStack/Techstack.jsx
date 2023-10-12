@@ -2,7 +2,7 @@ import React from 'react'
 
 const Techstack = () => {
   return (
-    <div className='gap-4 flex flex-col items-center bg-gray-50 h-screen rounded-t-xl shadow-2xl'>
+    <div className='gap-4 flex flex-col items-center bg-gray-50 h-screen rounded-t-xl shadow-2xl pt-10'>
 
         <h2 className='flex items-center text-2xl font-semi-bold'>Tech Stack</h2>
 
@@ -48,7 +48,7 @@ const Techstack = () => {
         </div>
 
 
-        <h2 className='flex items-center text-2xl font-semi-bold pt-16'>Bibliothèques / Frameworks</h2>
+        <h2 className='flex items-center text-2xl font-semi-bold pt-10'>Bibliothèques / Frameworks</h2>
         <div className='flex items-center gap-10'>
             <div className='flex flex-col items-center gap-2'>
                 <picture>
@@ -71,8 +71,8 @@ const Techstack = () => {
             </div>
         </div>
 
-        <h2 className='flex items-center text-2xl font-semi-bold pt-16'>Outils</h2>
-        <div className='flex  items-center gap-16'>
+        <h2 className='flex items-center text-2xl font-semi-bold pt-10'>Outils</h2>
+        <div className='flex  items-center gap-20'>
             <div className='flex flex-col items-center gap-2'>
                 <picture>
                     <svg width="60" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

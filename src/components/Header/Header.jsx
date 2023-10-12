@@ -2,11 +2,12 @@ import React from 'react'
 import BtnGitHubProfil from '../Buttons/BtnGitHubProfil'
 import BtnLinkedinProfil from '../Buttons/BtnLinkedinProfil'
 import Techstack from '../TechStack/Techstack'
+import { HiChevronDown } from 'react-icons/hi2'
 
 const Header = () => {
     return (
         <main className='font-raleway'>
-            <div className='flex flex-col justify-center items-center pt-8 h-screen'>
+            <div className='h-screen flex flex-col justify-center items-center'>
                 <picture>
                     <img src="./img/pp00.jpeg" alt="" width={200} />
                 </picture>
@@ -15,10 +16,11 @@ const Header = () => {
                     Bonjour ! <br/> 
                     Je me présente Adrien Douville, un développeur <mark className='bg-black text-white p-1 rounded-lg font-semibold'>front-end React</mark> se situant vers <span className='underline'>Bordeaux, France.</span>
                 </p>
-                <div className='pt-5 flex gap-20 pb-24'>
+                <div className='pt-5 flex gap-20'>
                     <BtnLinkedinProfil />
                     <BtnGitHubProfil />
                 </div>
+                <HiChevronDown className='text-2xl animate-bounce infinite'/>
             </div>
             <Techstack />
         </main>
