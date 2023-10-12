@@ -3,6 +3,7 @@ import BtnGitHubProfil from '../Buttons/BtnGitHubProfil'
 import BtnLinkedinProfil from '../Buttons/BtnLinkedinProfil'
 import Techstack from '../TechStack/Techstack'
 import { HiChevronDown } from 'react-icons/hi2'
+import About from '../About/About'
 
 const Header = () => {
     return (
@@ -23,6 +24,7 @@ const Header = () => {
                 <HiChevronDown className='text-2xl animate-bounce infinite'/>
             </div>
             <Techstack />
+            <About />
         </main>
     )
 }
