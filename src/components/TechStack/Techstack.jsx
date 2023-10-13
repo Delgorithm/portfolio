@@ -49,7 +49,7 @@ const Techstack = () => {
 
 
         <h2 className='flex items-center text-2xl font-semi-bold pt-10'>Bibliothèques / Frameworks</h2>
-        <div className='flex items-center gap-10'>
+        <div className='flex items-center gap-14'>
             <div className='flex flex-col items-center gap-2'>
                 <picture>
                     <svg width="60" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

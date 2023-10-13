@@ -24,9 +24,6 @@ const Header = () => {
                 </div>
                 <HiChevronDown className='text-2xl animate-bounce infinite'/>
             </div>
-            <Techstack />
-            <About />
-            <Projects />
         </main>
     )
 }
