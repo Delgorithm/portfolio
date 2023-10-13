@@ -32,9 +32,7 @@ const Techstack = () => {
                 </p>
             </div>
         </div>
-
-
-        <div className='flex flex-col items-center gap-2'>
+        <div className='flex flex-col items-center gap-2 pt-4'>
             <picture>
                 <svg width="50" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                     <g><path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
@@ -48,7 +46,7 @@ const Techstack = () => {
         </div>
 
 
-        <h2 className='flex items-center text-2xl font-semi-bold pt-10'>Bibliothèques / Frameworks</h2>
+        <h2 className='flex items-center text-2xl font-semi-bold pt-16'>Bibliothèques / Frameworks</h2>
         <div className='flex items-center gap-14'>
             <div className='flex flex-col items-center gap-2'>
                 <picture>
@@ -71,7 +69,7 @@ const Techstack = () => {
             </div>
         </div>
 
-        <h2 className='flex items-center text-2xl font-semi-bold pt-10'>Outils</h2>
+        <h2 className='flex items-center text-2xl font-semi-bold pt-20'>Outils</h2>
         <div className='flex  items-center gap-20'>
             <div className='flex flex-col items-center gap-2'>
                 <picture>
