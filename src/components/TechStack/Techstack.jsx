@@ -2,7 +2,7 @@ import React from 'react'
 
 const Techstack = () => {
   return (
-    <div className='gap-4 flex flex-col items-center bg-gray-50 h-screen rounded-t-xl shadow-2xl pt-10'>
+    <div className='gap-4 flex flex-col items-center bg-gray-50 h-screen rounded-t-xl shadow-2xl pt-4'>
 
         <h2 className='flex items-center text-2xl font-semi-bold'>Tech Stack</h2>
 

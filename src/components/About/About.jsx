@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='h-screen bg-white flex flex-col'>
+    <div className='h-screen bg-white flex flex-col pt-4'>
         <picture className='flex justify-center p-2'>
             <img src="./img/img001.jpg" alt="" width={300} className='rounded-2xl'/>
         </picture>
