@@ -9,9 +9,9 @@ import Projects from '../Projects/Projects'
 const Header = () => {
     return (
         <main className='font-raleway'>
-            <div className='flex flex-col justify-center items-center pt-5'>
+            <div className='flex flex-col justify-center items-center h-screen'>
                 <picture>
-                    <img src="./img/pp00.jpeg" alt="" width={200} />
+                    <img src="./img/pp00.jpeg" alt="" width={250} className='-translate-y-10' />
                 </picture>
                 <h1 className='text-3xl text-center font-bold p-2 py-5'>Développeur Front-End React</h1>
                 <p className='text-center px-6 text-xl leading-9'>
