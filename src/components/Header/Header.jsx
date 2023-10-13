@@ -9,7 +9,7 @@ import Projects from '../Projects/Projects'
 const Header = () => {
     return (
         <main className='font-raleway'>
-            <div className='flex flex-col justify-center items-center pt-4'>
+            <div className='flex flex-col justify-center items-center pt-5'>
                 <picture>
                     <img src="./img/pp00.jpeg" alt="" width={200} />
                 </picture>
