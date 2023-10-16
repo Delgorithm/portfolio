@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className=' bg-gray-50 p-4 rounded-xl shadow-lg'>
 
-        <div className='flex items-center text-2xl font-semibold'>
+        <div className='flex items-center text-2xl font-semibold lg:text-4xl lg:p-10'>
             <AiOutlineLeft />
             <p>Projets</p>
             <span className='w-5 h-0.5 bg-black -rotate-45 translate-x-2'></span>

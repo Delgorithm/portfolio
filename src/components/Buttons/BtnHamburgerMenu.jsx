@@ -12,7 +12,7 @@ const BtnHamburgerMenu = () => {
     }
 
     return (
-        <div className="relative lg:hidden flex">
+        <div className="relative flex">
             <button 
                 className='text-white p-2'
                 onClick={toggleMenu}
@@ -36,7 +36,6 @@ const BtnHamburgerMenu = () => {
                     <p>test</p>
                 </div>
             )}
-
         </div>
     )
 }

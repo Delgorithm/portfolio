@@ -9,20 +9,27 @@ import Projects from '../Projects/Projects'
 const Header = () => {
     return (
         <main className='font-raleway'>
-            <div className='flex flex-col justify-center items-center h-screen'>
+            <div className='flex flex-col justify-center items-center h-screen md:h-full md:pt-20 '>
                 <picture>
-                    <img src="./img/pp00.jpeg" alt="" width={250} className='-translate-y-10' />
+                    <img 
+                        src="./img/pp00.jpeg" 
+                        alt="" 
+                        width={250} 
+                        className=' md:w-80 lg:w-96'
+                    />
                 </picture>
-                <h1 className='text-3xl text-center font-bold p-2 py-5'>Développeur Front-End React</h1>
-                <p className='text-center px-6 text-xl leading-9'>
+                <h1 className='text-3xl text-center font-bold p-2 py-5 '>Développeur Front-End React</h1>
+                <p className='text-center px-6 text-xl leading-9 '>
                     Bonjour ! <br/> 
                     Je me présente Adrien Douville, un développeur <mark className='bg-black text-white p-1 rounded-lg font-semibold'>front-end React</mark> se situant vers <span className='underline'>Bordeaux, France.</span>
                 </p>
-                <div className='pt-5 flex gap-20'>
+                <div className='pt-5 flex gap-20 '>
                     <BtnLinkedinProfil />
                     <BtnGitHubProfil />
                 </div>
-                <HiChevronDown className='text-2xl animate-bounce infinite'/>
+                <div className=''>
+                    <HiChevronDown className='text-2xl animate-bounce infinite '/>
+                </div>
             </div>
         </main>
     )
