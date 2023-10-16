@@ -15,7 +15,8 @@ const Header = () => {
                         src="./img/pp00.jpeg" 
                         alt="" 
                         width={250} 
-                        className=' md:w-80 lg:w-96'
+                        // className='xxsm:w-40 xsm:w-100 md:w-80 lg:w-96'
+                        className='w-40 md:w-80 lg:w-96'
                     />
                 </picture>
                 <h1 className='text-3xl text-center font-bold p-2 py-5 '>Développeur Front-End React</h1>

@@ -56,7 +56,7 @@ const Contact = () => {
         <div className='flex justify-center'>
           <button 
             type='submit'
-            className='bg-blue-400 rounded-lg p-1 active:opacity-70 w-52'
+            className='text-white bg-blue-400 rounded-lg p-1 active:opacity-70 w-52'
           >
             Envoyer
           </button>

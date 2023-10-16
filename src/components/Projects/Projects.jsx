@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import BtnProjectOne from '../Buttons/BtnProjects/BtnProjectOne'
+import DataProjects from '../data/DataProjects'
 
 const Projects = () => {
   return (
@@ -13,95 +14,26 @@ const Projects = () => {
             <AiOutlineRight />
         </div>
 
-        {/* Project n 1 */}
-        <div className='m-4 p-4 rounded-xl shadow-lg text-center bg-white '>
-            <div>
+        {DataProjects.map((item, index) => (
+            <div 
+                key={item.id}
+                className='m-4 p-4 rounded-xl shadow-lg text-center bg-white'
+            >
                 <picture>
-                    <img src="./img/img001.jpg" alt="" className='rounded-xl shadow-lg' />
+                    <img src={item.img} alt="" className='rounded-xl shadow-lg' />
                 </picture>
-                <p className='p-2 text-xl font-semibold'>Clone UberEats</p>
-                <p className='px-5 py-2'>Un clone de l'application/site web Uber Eats qui permet à l'utilisateur de commander ses plats parmis un éventail choisis. <br/>Il peut sélectionner le restaurant, le(s) produit(s), acheter, ajouter une destination, se connecter.</p>
-                <p className='flex justify-center gap-6'>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>React</span>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>TailwindCSS</span>
-                </p>
+                <p className='pt-10 text-2xl font-semibold md:text-3xl lg:text-4xl'>{item.title}</p>
+                <p className='px-5 p-4 md:text-xl lg:text-2xl'>{item.firstDescription}</p>
+                <p className='px-5 md:text-xl lg:text-2xl'>{item.secondDescription}</p>
+                <div  className='flex justify-center gap-6 pt-4'>
+                    <p className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg md:text-xl'>{item.firstTool}</p>
+                    <p className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg md:text-xl'>{item.secondTool}</p>
+                </div>
+                <div className='pt-6'>
+                    <BtnProjectOne />
+                </div>
             </div>
-            <div className='pt-6'>
-                <BtnProjectOne />
-            </div>
-        </div>
-
-        {/* Project n 2 */}
-        <div className='m-4 p-4 rounded-xl shadow-lg text-center bg-white'>
-            <div>
-                <picture>
-                    <img src="./img/img001.jpg" alt="" className='rounded-xl shadow-lg' />
-                </picture>
-                <p className='p-2 text-xl font-semibold'>Clone UberEats</p>
-                <p className='px-5 py-2'>Un clone de l'application/site web Uber Eats qui permet à l'utilisateur de commander ses plats parmis un éventail choisis. <br/>Il peut sélectionner le restaurant, le(s) produit(s), acheter, ajouter une destination, se connecter.</p>
-                <p className='flex justify-center gap-6'>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>React</span>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>TailwindCSS</span>
-                </p>
-            </div>
-            <div className='pt-6'>
-                <BtnProjectOne />
-            </div>
-        </div>
-
-        {/* Project n 3 */}
-        <div className='m-4 p-4 rounded-xl shadow-lg text-center bg-white'>
-            <div>
-                <picture>
-                    <img src="./img/img001.jpg" alt="" className='rounded-xl shadow-lg' />
-                </picture>
-                <p className='p-2 text-xl font-semibold'>Clone UberEats</p>
-                <p className='px-5 py-2'>Un clone de l'application/site web Uber Eats qui permet à l'utilisateur de commander ses plats parmis un éventail choisis. <br/>Il peut sélectionner le restaurant, le(s) produit(s), acheter, ajouter une destination, se connecter.</p>
-                <p className='flex justify-center gap-6'>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>React</span>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>TailwindCSS</span>
-                </p>
-            </div>
-            <div className='pt-6'>
-                <BtnProjectOne />
-            </div>
-        </div>
-
-        {/* Project n 4 */}
-        <div className='m-4 p-4 rounded-xl shadow-lg text-center bg-white'>
-            <div>
-                <picture>
-                    <img src="./img/img001.jpg" alt="" className='rounded-xl shadow-lg' />
-                </picture>
-                <p className='p-2 text-xl font-semibold'>Clone UberEats</p>
-                <p className='px-5 py-2'>Un clone de l'application/site web Uber Eats qui permet à l'utilisateur de commander ses plats parmis un éventail choisis. <br/>Il peut sélectionner le restaurant, le(s) produit(s), acheter, ajouter une destination, se connecter.</p>
-                <p className='flex justify-center gap-6'>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>React</span>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>TailwindCSS</span>
-                </p>
-            </div>
-            <div className='pt-6'>
-                <BtnProjectOne />
-            </div>
-        </div>
-
-        {/* Project n 5 */}
-        <div className='m-4 p-4 rounded-xl shadow-lg text-center bg-white'>
-            <div>
-                <picture>
-                    <img src="./img/img001.jpg" alt="" className='rounded-xl shadow-lg' />
-                </picture>
-                <p className='p-2 text-xl font-semibold'>Clone UberEats</p>
-                <p className='px-5 py-2'>Un clone de l'application/site web Uber Eats qui permet à l'utilisateur de commander ses plats parmis un éventail choisis. <br/>Il peut sélectionner le restaurant, le(s) produit(s), acheter, ajouter une destination, se connecter.</p>
-                <p className='flex justify-center gap-6'>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>React</span>
-                    <span className='font-semibold p-1 border border-black bg-gray-100 shadow-sm rounded-lg'>TailwindCSS</span>
-                </p>
-            </div>
-            <div className='pt-6'>
-                <BtnProjectOne />
-            </div>
-        </div>        
+        ))}  
     </div>
   )
 }

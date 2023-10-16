@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xsm': '400px',
+        'xxsm': '320px',
+      },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
       },

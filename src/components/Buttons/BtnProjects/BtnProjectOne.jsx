@@ -16,9 +16,9 @@ const BtnProjectOne = () => {
                     rel='noopener noreferrer' 
                     className='flex items-center gap-2 p-2 transition duration-200 ease-in-out hover:scale-105'
                 >
-                    <p>Code</p>
+                    <p className='md:text-2xl lg:text-3xl'>Code</p>
                     <button>
-                        <FiGithub className='text-2xl'/>
+                        <FiGithub className='text-2xl md:text-3xl lg:text-4xl'/>
                     </button>
                 </a>
             </div>
@@ -29,9 +29,9 @@ const BtnProjectOne = () => {
                     rel='noopener noreferrer' 
                     className='flex items-center gap-2 p-2 transition duration-200 ease-in-out hover:scale-105'
                 >
-                    <p>Live Demo</p>
+                    <p className='md:text-2xl lg:text-3xl'>Live Demo</p>
                     <button>
-                        <BiLinkExternal className='text-2xl'/>
+                        <BiLinkExternal className='text-2xl md:text-3xl lg:text-4xl'/>
                     </button>
                 </a>
             </div>
