@@ -8,7 +8,8 @@ export default {
     extend: {
       screens: {
         'xsm': '400px',
-        'xxsm': '320px',
+        'xxsm': '370px', 
+        'xxxsm': '320px',
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],

@@ -5,9 +5,9 @@ import DataProjects from '../data/DataProjects'
 
 const Projects = () => {
   return (
-    <div className=' bg-gray-50 p-4 rounded-xl shadow-lg'>
+    <div className=' bg-gray-50 p-4 rounded-xl shadow-lg h-full'>
 
-        <div className='flex items-center text-2xl font-semibold lg:text-4xl lg:p-10'>
+        <div className='flex items-center text-2xl font-semibold lg:text-4xl lg:p-10 pb-4'>
             <AiOutlineLeft />
             <p>Projets</p>
             <span className='w-5 h-0.5 bg-black -rotate-45 translate-x-2'></span>
@@ -17,7 +17,7 @@ const Projects = () => {
         {DataProjects.map((item, index) => (
             <div 
                 key={item.id}
-                className='m-4 p-4 rounded-xl shadow-lg text-center bg-white'
+                className='xxxsm:m-1 p-4 rounded-xl shadow-lg text-center'
             >
                 <picture>
                     <img src={item.img} alt="" className='rounded-xl shadow-lg' />

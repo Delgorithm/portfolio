@@ -2,9 +2,9 @@ import React from 'react'
 
 const Techstack = () => {
   return (
-    <div className='gap-4 flex flex-col items-center bg-gray-50 h-screen rounded-t-xl shadow-2xl pt-4 lg:h-full lg:pb-20'>
+    <div className='gap-4 flex flex-col items-center bg-gray-50 h-full xxxsm:pb-14  xxsm:pb-10 rounded-t-xl shadow-2xl pt-4 lg:h-full lg:pb-20'>
 
-        <h2 className='flex items-center text-2xl font-semi-bold'>Tech Stack</h2>
+        <h2 className='flex items-center text-2xl font-semi-bold md:pt-4 md:text-3xl'>Tech Stack</h2>
 
         <div className='flex justify-between items-center gap-10 md:gap-40'>
             <div className='flex flex-col items-center gap-2'>
