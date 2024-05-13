@@ -6,7 +6,7 @@ function Hero() {
 			<h1 className="text-5xl flex flex-col gap-4 uppercase font-light pb-4">
 				Développeur <span>Web / Frontend</span>
 			</h1>
-			<article className="leading-6 font-light pt-6">
+			<article className="leading-6 font-light pt-3">
 				<p>Bienvenue,</p>
 				<p className="mr-14 pt-4">
 					Je suis Adrien Douville, un développeur web axé sur le Frontend.
@@ -20,7 +20,7 @@ function Hero() {
 					la réalisation des différents projets qui me sont destinés.
 				</p>
 			</article>
-			<p className=" flex items-center justify-center p-24 rotate-90 motion-safe:animate-pulse font-thin">
+			<p className=" flex items-center justify-center p-20 rotate-90 motion-safe:animate-pulse font-thin">
 				En savoir plus <IoIosArrowRoundForward className="text-5xl pt-1" />
 			</p>
 		</section>
