@@ -5,6 +5,8 @@ import IconBxlReact from "../assets/logos/IconReact";
 import IconBxlStripe from "../assets/logos/IconStripe";
 import IconBxlTailwindCss from "../assets/logos/IconTailwind";
 
+const imgNiklone = "../Img/project-niklone-04.png";
+
 function ProjectNiklone({ projectsText }) {
 	const firstProject = projectsText[0].niklone[0];
 	const handleRedirectVercel = () => {
@@ -26,7 +28,7 @@ function ProjectNiklone({ projectsText }) {
 			<section className="border rounded-lg bg-tundora shadow-lg py-4 px-4 mt-10">
 				<article className="flex justify-center items-center ">
 					<img
-						src="../public/Img/project-niklone-04.png"
+						src={imgNiklone}
 						alt="Niklone : E-commerce project"
 						className="w-64"
 					/>
