@@ -1,28 +1,23 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoIosArrowRoundDown } from "react-icons/io";
 
-function Hero() {
+function Hero({ heroText }) {
 	return (
-		<section className="pt-10">
-			<h1 className="text-5xl flex flex-col gap-4 uppercase font-light pb-4">
-				Développeur <span>Web / Frontend</span>
+		<section className="xs:pt-6 xsl:pt-10 p-4">
+			<h1 className="xxs:text-5xl xs:text-6xl xxs:-mt-3">
+				{heroText[0].title}{" "}
+				<span className="xxs:text-4xl xs:text-4xl xsl:text-5xl">
+					{heroText[0].titleNext}
+				</span>
 			</h1>
-			<article className="leading-6 font-light pt-3">
-				<p>Bienvenue,</p>
-				<p className="mr-14 pt-4">
-					Je suis Adrien Douville, un développeur web axé sur le Frontend.
-				</p>
-				<p className="mr-8 pt-6">
-					💻 Après une année de formation en autodidacte dans ce milieu qui me
-					passionne. Ainsi que 5 mois intensifs au sein de la Wild Code School
-				</p>
-				<p className="mr-8 pt-6 ">
-					🎓 Me voici prêt à travailler et apprendre davantage pour mener à bien
-					la réalisation des différents projets qui me sont destinés.
-				</p>
+			<article className="leading-6 font-light xxs:pt-2 xsl:pt-12 xxs:text-xs xs:text-base xsl:text-lg xs:pt-5 ">
+				<p className="xxs:text-xl xxs:mt-1">{heroText[0].firstP}</p>
+				<p className="mr-14 xxs:pt-3 xs:pt-3 xsl:pt-6">{heroText[0].secondP}</p>
+				<p className="mr-8 xxs:pt-4 xs:pt-3 xsl:pt-6">{heroText[0].thirdP}</p>
+				<p className="mr-8 xxs:pt-4 xs:pt-3 xsl:pt-6">{heroText[0].fourthP}</p>
 			</article>
-			<p className=" flex items-center justify-center p-20 rotate-90 motion-safe:animate-pulse font-thin">
-				En savoir plus <IoIosArrowRoundForward className="text-5xl pt-1" />
-			</p>
+			<div className=" flex items-center justify-center xs:mt-10 motion-safe:animate-pulse font-thin">
+				<IoIosArrowRoundDown className="text-5xl pt-1" />
+			</div>
 		</section>
 	);
 }

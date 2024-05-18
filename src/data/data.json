@@ -1,0 +1,41 @@
+{
+	"hero": [
+		{
+			"id": 1,
+			"title": "Développeur",
+			"titleNext": "Web / Frontend",
+			"firstP": "Bienvenue,",
+			"secondP": "Je suis Adrien Douville, un développeur web axé sur le Frontend.",
+			"thirdP": "💻 Après une année de formation en autodidacte dans ce milieu qui me passionne. Ainsi que 5 mois intensifs au sein de la Wild Code School",
+			"fourthP": "🎓 Me voici prêt à travailler et apprendre davantage pour mener à bien la réalisation des différents projets qui me sont destinés."
+		}
+	],
+
+	"navbar": [
+		{
+			"id": 2,
+			"title": "Adrien Douville"
+		}
+	],
+
+	"project": [
+		{
+			"id": 3,
+			"title": "Projets",
+			"niklone": [
+				{
+					"id": 4,
+					"title": "Niklone",
+					"theme": "E-commerce",
+					"outils1": "React",
+					"outils2": "Tailwind CSS",
+					"outils3": "Firebase",
+					"outils4": "Stripe",
+					"outils5": "Node",
+					"demo": "Démo",
+					"code": "Code"
+				}
+			]
+		}
+	]
+}

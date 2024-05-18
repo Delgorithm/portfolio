@@ -1,10 +1,10 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 
-function Navbar({ handleOpen, isOpen }) {
+function Navbar({ navbarText, handleOpen, isOpen }) {
 	return (
-		<nav className="flex items-center justify-between">
-			<p className="text-2xl">Adrien Douville</p>
+		<nav className="flex items-center justify-between p-4">
+			<p className="text-2xl">{navbarText[0].title}</p>
 
 			<button onClick={handleOpen} className="p-2">
 				{isOpen ? (
