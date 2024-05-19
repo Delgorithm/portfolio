@@ -17,17 +17,20 @@ function Footer({ dataContacts }) {
 	};
 
 	return (
-		<section id="contact" className="p-4 bg-mineshaft text-pampas rounded-t-xl">
-			<h2 className="text-text-minehsaft text-3xl font-light pt-6">
+		<section
+			id="contact"
+			className="p-4 bg-mineshaft text-pampas rounded-t-xl xl:px-10">
+			<h2 className="text-text-minehsaft text-3xl md:text-5xl font-light pt-6">
 				Me contacter
 			</h2>
-			<section className="flex flex-col items-center gap-8 py-10">
+			<section className="flex flex-col items-center gap-8 py-10 md:flex-row md:justify-around">
 				<button onClick={handleGmail}>
 					<IconGmail className="text-5xl" />
 				</button>
 				<button onClick={handleLinkedin}>
 					<IconLinkedin className="text-5xl" />
 				</button>
+
 				<button onClick={handleGithub}>
 					<IconGithub className="text-5xl" />
 				</button>

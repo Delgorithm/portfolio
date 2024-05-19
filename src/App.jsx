@@ -27,7 +27,7 @@ function App() {
 
 	return (
 		<>
-			<section className="h-screen bg-pampas">
+			<section className="h-screen bg-pampas overflow-hidden">
 				<Navbar
 					navbarText={navbarText}
 					hamburgerText={hamburgerText}
