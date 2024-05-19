@@ -13,7 +13,7 @@ function Hero({ heroText }) {
 			</h1>
 			<article className="md:flex relative">
 				<section className="z-10">
-					<div className="leading-6 font-light xxs:pt-2 xsl:pt-12 xxs:text-xs xs:text-base xsl:text-lg xs:pt-5 iphone12:flex iphone12:flex-col iphone12:gap-1 iphone12pro:gap-5">
+					<div className="leading-6 font-light xxs:pt-2 xsl:pt-12 xxs:text-xs xs:text-base xsl:text-lg xs:pt-5 iphone12:flex iphone12:flex-col iphone12:gap-1 iphone12pro:gap-5 xl:gap-14">
 						<p className="xxs:text-xl md:text-3xl xxs:mt-1">
 							{heroText[0].firstP}
 						</p>
