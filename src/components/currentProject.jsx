@@ -26,13 +26,13 @@ function CurrentProject({ project }) {
 	};
 
 	return (
-		<section className="border rounded-xl bg-tundora shadow-lg px-4 mt-10">
+		<section className="border rounded-xl bg-tundora shadow-lg px-4 mt-10 mb-4 xsl:py-4">
 			<article className="flex justify-center items-center ">
 				<img src={project.imageUrl} alt={project.imageAlt} className="w-64" />
 			</article>
 			<article className="text-silver">
-				<h3 className="text-2xl mt-1">{project.title}</h3>
-				<p className="text-sm">App : {project.theme}</p>
+				<h3 className="text-2xl mt-1 xsl:text-3xl">{project.title}</h3>
+				<p className="text-sm xsl:text-lg">App : {project.theme}</p>
 				<div className="w-full h-0.5 my-4 bg-dovegray"></div>
 				<div className="grid grid-cols-2 gap-4">
 					{project.tools.map((tool, index) => {
@@ -43,8 +43,8 @@ function CurrentProject({ project }) {
 								className={`flex items-center gap-2 ${
 									index < 5 ? "" : "col-start-2"
 								}`}>
-								<IconComponent className="text-2xl" />
-								{tool.name}
+								<IconComponent className="text-2xl xsl:text-3xl" />
+								<p className="xsl:text-lg">{tool.name}</p>
 							</div>
 						);
 					})}
@@ -53,13 +53,13 @@ function CurrentProject({ project }) {
 				<article className="flex justify-around gap-4 my-4">
 					<button
 						onClick={handleRedirectVercel}
-						className="flex items-center gap-2 border my-3 px-5 rounded-xl bg-cararra shadow-lg hover:motion-safe:animate-pulse active:opacity-65 active:translate-y-0.5">
+						className="flex items-center gap-2 border my-3 px-5 xsl:py-4 rounded-xl bg-cararra shadow-lg hover:motion-safe:animate-pulse active:opacity-65 active:translate-y-0.5">
 						<RxVercelLogo className="text-2xl text-mineshaft" />
 						<p className="text-mineshaft">{project.demo}</p>
 					</button>
 					<button
 						onClick={handleRedirectGithub}
-						className="flex items-center gap-2 border my-3 px-5 rounded-xl bg-cararra shadow-lg hover:motion-safe:animate-pulse active:opacity-65 active:translate-y-0.5">
+						className="flex items-center gap-2 border my-3 px-5 xsl:py-4 rounded-xl bg-cararra shadow-lg hover:motion-safe:animate-pulse active:opacity-65 active:translate-y-0.5">
 						<RxGithubLogo className="text-2xl text-mineshaft" />
 						<p className="text-mineshaft">{project.code}</p>
 					</button>

@@ -32,6 +32,11 @@ function Footer({ dataContacts }) {
 					<IconGithub className="text-5xl" />
 				</button>
 			</section>
+			<section>
+				<p>
+					<small>{dataContacts[1].copyright}</small>
+				</p>
+			</section>
 		</section>
 	);
 }
