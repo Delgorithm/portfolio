@@ -3,7 +3,7 @@ import { RxCross1 } from "react-icons/rx";
 
 function Navbar({ navbarText, hamburgerText, handleOpen, isOpen }) {
 	return (
-		<nav className="fixed flex items-center justify-between p-4 bg-pampas w-full rounded-b-xl shadow-lg">
+		<nav className="fixed flex items-center justify-between xxs:px-4 xxs:py-1 bg-pampas w-full rounded-b-xl shadow-lg">
 			<p className="text-2xl">{navbarText[0].title}</p>
 
 			<button onClick={handleOpen} className="p-2 cursor-pointer">
@@ -19,7 +19,7 @@ function Navbar({ navbarText, hamburgerText, handleOpen, isOpen }) {
 				<section className="fixed h-full w-screen bg-mineshaft/50 backdrop-blur-sm top-0 right-0 z-20">
 					<div className="text-pampas flex flex-col absolute right-0 top-0 h-screen p-8 gap-8 z-50 w-80 bg-mineshaft">
 						<button onClick={handleOpen}>
-							<RxCross1 className="text-3xl text-pampas fixed top-6 right-6" />
+							<RxCross1 className="text-3xl text-pampas fixed xxs:top-3 xxs:right-6  xsl:top-6 xsl:right-6" />
 						</button>
 						<article className="flex flex-col gap-6">
 							<div className="w-full h-0.5 my-4 bg-dovegray"></div>
