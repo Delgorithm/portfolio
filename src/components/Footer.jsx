@@ -24,16 +24,30 @@ function Footer({ dataContacts }) {
 				Me contacter
 			</h2>
 			<section className="flex flex-col items-center gap-8 py-10 md:flex-row md:justify-around">
-				<button onClick={handleGmail}>
-					<IconGmail className="text-5xl" />
-				</button>
-				<button onClick={handleLinkedin}>
-					<IconLinkedin className="text-5xl" />
-				</button>
-
-				<button onClick={handleGithub}>
-					<IconGithub className="text-5xl" />
-				</button>
+				<div className="text-center">
+					<button onClick={handleGmail}>
+						<IconGmail className="text-5xl" />
+					</button>
+					<p className="xxs:hidden xl:block xl:mt-2">
+						{dataContacts[0].mailAddress}
+					</p>
+				</div>
+				<div className="text-center">
+					<button onClick={handleLinkedin}>
+						<IconLinkedin className="text-5xl" />
+					</button>
+					<p className="xxs:hidden xl:block xl:mt-2">
+						{dataContacts[0].profilLinkedin}
+					</p>
+				</div>
+				<div className="text-center">
+					<button onClick={handleGithub}>
+						<IconGithub className="text-5xl" />
+					</button>
+					<p className="xxs:hidden xl:block xl:mt-2">
+						{dataContacts[0].profilGithub}
+					</p>
+				</div>
 			</section>
 			<section>
 				<p className="text-center">

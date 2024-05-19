@@ -36,8 +36,8 @@
 		"theme": "Santé",
 		"imageUrl": "../Img/project-dialog-0.png",
 		"imageAlt": "Dialog's homepage",
-		"vercelUrl": "",
-		"githubUrl": "",
+		"vercelUrl": "https://dialog-frontend.vercel.app/",
+		"githubUrl": "https://github.com/Delgorithm/dialog",
 		"demo": "Live Demo",
 		"code": "Source Code",
 		"tools": [
