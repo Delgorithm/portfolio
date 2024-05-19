@@ -14,7 +14,9 @@ const delgoImg = "../Img/delgo01.png";
 
 function MySkills({ skillsText }) {
 	return (
-		<section className="bg-pampas h-full p-4 rounded-t-xl text-mineshaft">
+		<section
+			id="skills"
+			className="bg-pampas h-full p-4 rounded-t-xl text-mineshaft">
 			<h2 className="text-text-minehsaft text-3xl font-light pt-6">
 				Compétences
 			</h2>

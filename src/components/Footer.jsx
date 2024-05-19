@@ -17,7 +17,7 @@ function Footer({ dataContacts }) {
 	};
 
 	return (
-		<section className="p-4 bg-mineshaft text-pampas rounded-t-xl">
+		<section id="contact" className="p-4 bg-mineshaft text-pampas rounded-t-xl">
 			<h2 className="text-text-minehsaft text-3xl font-light pt-6">
 				Me contacter
 			</h2>
@@ -33,7 +33,7 @@ function Footer({ dataContacts }) {
 				</button>
 			</section>
 			<section>
-				<p>
+				<p className="text-center">
 					<small>{dataContacts[1].copyright}</small>
 				</p>
 			</section>

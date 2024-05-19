@@ -7,13 +7,15 @@ import MySkills from "./components/MySkills";
 import Footer from "./components/Footer";
 
 import data from "./data/data.json";
+import dataHamburger from "./data/dataHamburger.json";
 import dataProjects from "./data/dataProjects.json";
 import dataSkills from "./data/dataSkills.json";
 import dataContacts from "./data/dataContacts.json";
 
 function App() {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(true);
 
+	const hamburgerText = dataHamburger;
 	const heroText = data.hero;
 	const navbarText = data.navbar;
 	const projectsText = dataProjects;
@@ -28,6 +30,7 @@ function App() {
 			<section className="h-screen bg-pampas">
 				<Navbar
 					navbarText={navbarText}
+					hamburgerText={hamburgerText}
 					handleOpen={handleOpen}
 					isOpen={isOpen}
 				/>
