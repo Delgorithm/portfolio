@@ -21,7 +21,7 @@ function Hero({ heroText }) {
 					{heroText[0].fourthP}
 				</p>
 			</article>
-			<div className=" flex items-center justify-center xs:mt-10 motion-safe:animate-pulse font-thin">
+			<div className=" flex items-center justify-center xs:mt-10 iphone12:mt-5 motion-safe:animate-pulse font-thin">
 				<IoIosArrowRoundDown className="text-5xl pt-1" />
 			</div>
 		</section>
