@@ -16,26 +16,5 @@
 			"id": 2,
 			"title": "Adrien Douville"
 		}
-	],
-
-	"project": [
-		{
-			"id": 3,
-			"title": "Projets",
-			"niklone": [
-				{
-					"id": 4,
-					"title": "Niklone",
-					"theme": "E-commerce",
-					"outils1": "React",
-					"outils2": "Tailwind CSS",
-					"outils3": "Firebase",
-					"outils4": "Stripe",
-					"outils5": "Node",
-					"demo": "Démo",
-					"code": "Code"
-				}
-			]
-		}
 	]
 }

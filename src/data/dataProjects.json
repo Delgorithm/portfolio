@@ -1,0 +1,66 @@
+[
+	{
+		"title": "Niklone",
+		"theme": "E-commerce",
+		"imageUrl": "../Img/project-niklone-04.png",
+		"imageAlt": "Niklone's homepage",
+		"vercelUrl": "https://niklone.vercel.app/",
+		"githubUrl": "https://github.com/Delgorithm/Niklone",
+		"demo": "Live Demo",
+		"code": "Source Code",
+		"tools": [
+			{
+				"name": "React",
+				"icon": "IconBxlReact"
+			},
+			{
+				"name": "TailwindCSS",
+				"icon": "IconBxlTailwindCss"
+			},
+			{
+				"name": "Node.js",
+				"icon": "IconNodejs"
+			},
+			{
+				"name": "Firebase",
+				"icon": "IconBxlFirebase"
+			},
+			{
+				"name": "Stripe",
+				"icon": "IconBxlStripe"
+			}
+		]
+	},
+	{
+		"title": "Dialog",
+		"theme": "Santé",
+		"imageUrl": "../Img/project-dialog-01.svg",
+		"imageAlt": "Dialog's homepage",
+		"vercelUrl": "",
+		"githubUrl": "",
+		"demo": "Live Demo",
+		"code": "Source Code",
+		"tools": [
+			{
+				"name": "React",
+				"icon": "IconBxlReact"
+			},
+			{
+				"name": "TailwindCSS",
+				"icon": "IconBxlTailwindCss"
+			},
+			{
+				"name": "Node.js",
+				"icon": "IconNodejs"
+			},
+			{
+				"name": "MySQL",
+				"icon": "IconMysql"
+			},
+			{
+				"name": "Rechart",
+				"icon": "IconAreaChart"
+			}
+		]
+	}
+]
