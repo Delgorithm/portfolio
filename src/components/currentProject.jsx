@@ -59,7 +59,10 @@ function CurrentProject({ project }) {
 				<article className="flex justify-around gap-4 my-4">
 					<button
 						onClick={handleRedirectVercel}
-						className="flex items-center gap-2 border my-3 px-5 xsl:py-4 rounded-xl bg-cararra shadow-lg hover:motion-safe:animate-pulse active:opacity-65 active:translate-y-0.5">
+						className={`flex items-center gap-2 border my-3 px-5 xsl:py-4 rounded-xl bg-cararra shadow-lg hover:motion-safe:animate-pulse active:opacity-65 active:translate-y-0.5 ${
+							project.title === "Dialog" ? "disabled:bg-mineshaft/40" : ""
+						}`}
+						disabled={project.title === "Dialog"}>
 						<RxVercelLogo className="text-2xl text-mineshaft md:text-5xl" />
 						<p className="text-mineshaft">{project.demo}</p>
 					</button>
