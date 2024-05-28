@@ -21,7 +21,10 @@ function BtnResume() {
 					<section className="fixed top-0 bg-mineshaft/95 h-full w-full">
 						<section className="relative top-[15%] h-full p-5">
 							<section className="flex flex-col justify-around items-center gap-5">
-								<SlClose />
+								<SlClose
+									onClick={handleOpen}
+									className="text-5xl text-silver fixed top-[15%] right-5"
+								/>
 								<img
 									src="/Img/cv.png"
 									alt="CV d'alternance d'Adrien Douville"

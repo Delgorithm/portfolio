@@ -4,8 +4,10 @@
 		"mailAddress": "adrien.douville@protonmail.com",
 		"linkedin": "Linkedin",
 		"profilLinkedin": "Adrien Douville",
+		"urlLinkedin": "https://www.linkedin.com/in/adriendouville/",
 		"github": "GitHub",
-		"profilGithub": "Delgorithm / Adrien Douville"
+		"profilGithub": "Delgorithm / Adrien Douville",
+		"urlGithub": "https://github.com/Delgorithm"
 	},
 	{
 		"copyright": "© Adrien Douville 2024"
