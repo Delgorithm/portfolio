@@ -19,7 +19,7 @@ function BtnResume() {
 			{!isOpen ? (
 				<>
 					<section className="fixed top-0 bg-mineshaft/95 h-full w-full">
-						<section className="relative xxs:top-[15%] xs:top-[25%] iphone12:top-[25%] xl:top-[20%] iphone12pro:top-[25%] h-full p-5">
+						<section className="relative xxs:top-[15%] xs:top-[15%] iphone12:top-[20%] xl:top-[20%] iphone12pro:top-[15%] h-full p-5">
 							<section className="flex flex-col justify-around items-center gap-5 ">
 								<SlClose
 									onClick={handleOpen}
@@ -28,9 +28,9 @@ function BtnResume() {
 								<img
 									src="/Img/cv.png"
 									alt="CV d'alternance d'Adrien Douville"
-									className="xxs:w-40 xs:w-52 xsl:w-56 iphone12:w-52 iphone12pro:w-60 md:w-72"
+									className="xxs:w-28 xs:w-52 xsl:w-56 iphone12:w-52 iphone12pro:w-60 md:w-72"
 								/>
-								<div className="text-silver flex justify-around w-full items-center">
+								<div className="text-silver justify-around w-full items-center grid grid-cols-2 xl:grid-cols-3 grid-rows-1 gap-4">
 									<a
 										href="/Img/cv_adrien_douville_cdi.pdf"
 										download="Adrien_Douville_cv_cdi.pdf"
@@ -47,6 +47,17 @@ function BtnResume() {
 										</p>
 										<TbCloudDownload className="text-6xl xs:text-7xl md:text-8xl text-tundora bg-pampas rounded-lg p-1 active:opacity-60 cursor-pointer" />
 									</a>
+									<div className="col-span-2 xl:col-span-1 justify-center items-center">
+										<a
+											href="/Img/cv_adrien_douville_english.pdf"
+											download="Adrien_Douville_cv_english.pdf"
+											className="flex flex-col items-center gap-4">
+											<p className="text-2xl  xs:text-3xl md:text-4xl">
+												International
+											</p>
+											<TbCloudDownload className="text-6xl xs:text-7xl md:text-8xl text-tundora bg-pampas rounded-lg p-1 active:opacity-60 cursor-pointer" />
+										</a>
+									</div>
 								</div>
 							</section>
 						</section>
