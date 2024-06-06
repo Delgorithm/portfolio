@@ -3,8 +3,8 @@ import { animate, motion } from "framer-motion";
 
 function Hero({ heroText }) {
 	const textMotion = {
-		hidden: { opacity: 0 },
-		visible: { opacity: 1 },
+		hidden: { opacity: 0, scale: 0.8 },
+		visible: { opacity: 1, scale: 1 },
 	};
 
 	const floatImg = {
@@ -36,18 +36,18 @@ function Hero({ heroText }) {
 		<section
 			id="about"
 			className="pt-20 p-4 iphone12:pt-24 xsl:pt-24 md:pt-40 xl:px-10">
-			<h1 className="xxs:text-5xl xs:text-6xl xxs:-mt-3">
-				{heroText[0].title}{" "}
-				<span className="xxs:text-4xl xs:text-4xl xsl:text-5xl md:text-6xl">
-					{heroText[0].titleNext}
-				</span>
-			</h1>
 			<motion.div
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true }}
-				transition={{ duration: 1.0 }}
+				transition={{ duration: 1.2 }}
 				variants={textMotion}>
+				<h1 className="xxs:text-5xl xs:text-6xl xxs:-mt-3">
+					{heroText[0].title}{" "}
+					<span className="xxs:text-4xl xs:text-4xl xsl:text-5xl md:text-6xl">
+						{heroText[0].titleNext}
+					</span>
+				</h1>
 				<article className="md:flex relative">
 					<section className="z-10">
 						<div className="leading-6 font-light xxs:pt-2 xsl:pt-12 xxs:text-xs xs:text-base xsl:text-lg xs:pt-5 iphone12:flex iphone12:flex-col iphone12:gap-1 iphone12pro:gap-5 xl:gap-14">
@@ -77,10 +77,10 @@ function Hero({ heroText }) {
 						</section>
 					</div>
 				</article>
+				<div className="flex items-center justify-center xxs:hidden iphone12:flex iphone12:-translate-y-8 xs:mt-10 md:mt-24 motion-safe:animate-pulse font-thin">
+					<IoIosArrowRoundDown className="text-5xl pt-1" />
+				</div>
 			</motion.div>
-			<div className="flex items-center justify-center xxs:hidden iphone12:flex iphone12:-translate-y-8 xs:mt-10 md:mt-24 motion-safe:animate-pulse font-thin">
-				<IoIosArrowRoundDown className="text-5xl pt-1" />
-			</div>
 		</section>
 	);
 }
