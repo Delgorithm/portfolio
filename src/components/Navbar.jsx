@@ -3,27 +3,6 @@ import { RxCross1 } from "react-icons/rx";
 import { motion } from "framer-motion";
 
 function Navbar({ navbarText, hamburgerText, handleOpen, isOpen }) {
-	const sidebarMotion = {
-		open: {
-			x: "0%",
-			opacity: 1,
-			transition: {
-				type: "spring",
-				stiffness: 50,
-				damping: 10,
-			},
-		},
-		closed: {
-			x: "100%",
-			opacity: 0,
-			transition: {
-				type: "spring",
-				stiffness: 100,
-				damping: 10,
-			},
-		},
-	};
-
 	return (
 		<nav className="fixed flex items-center justify-between xxs:px-4 xxs:py-1 md:py-6 xl:px-10 bg-pampas w-full rounded-b-xl shadow-lg z-20 transform transition ease-in-out delay-150">
 			<p className="text-2xl md:text-4xl">{navbarText[0].title}</p>
@@ -64,12 +43,7 @@ function Navbar({ navbarText, hamburgerText, handleOpen, isOpen }) {
 			{isOpen ? (
 				""
 			) : (
-				<motion.section
-					className="fixed h-full w-screen bg-mineshaft/50 backdrop-blur-sm top-0 right-0 z-20 transform transition ease-in-out delay-150"
-					variants={sidebarMotion}
-					initial="closed"
-					animate="open"
-					exit="closed">
+				<section className="fixed h-full w-screen bg-mineshaft/50 backdrop-blur-sm top-0 right-0 z-20 transform transition ease-in-out delay-150">
 					<div className="text-pampas flex flex-col absolute right-0 top-0 h-screen p-8 gap-8 z-50 w-80 md:w-1/2 bg-mineshaft">
 						<button onClick={handleOpen}>
 							<RxCross1 className="text-3xl text-pampas fixed xxs:top-3 xxs:right-6  xsl:top-6 xsl:right-6 md:top-8 md:right-7" />
@@ -117,7 +91,7 @@ function Navbar({ navbarText, hamburgerText, handleOpen, isOpen }) {
 							</li>
 						</ul>
 					</div>
-				</motion.section>
+				</section>
 			)}
 		</nav>
 	);
