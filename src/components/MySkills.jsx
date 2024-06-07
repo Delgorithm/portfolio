@@ -9,10 +9,16 @@ import IconNodejs from "../assets/logos/IconNode";
 import IconBxlReact from "../assets/logos/IconReact";
 import IconBxlTailwindCss from "../assets/logos/IconTailwind";
 import BtnResume from "./BtnResume";
+import { motion } from "framer-motion";
 
 const delgoImg = "../Img/delgo01.png";
 
 function MySkills({ skillsText }) {
+	const skillsMotion = {
+		hidden: { opacity: 0, scale: 0.8 },
+		visible: { opacity: 1, scale: 1 },
+	};
+
 	return (
 		<section
 			id="skills"
@@ -22,7 +28,13 @@ function MySkills({ skillsText }) {
 			</h2>
 			<section className="md:flex md:flex-col md:justify-center md:items-center">
 				<img src={delgoImg} alt="Adrien Douville" className="md:w-96" />
-				<article className="grid grid-cols-2 gap-3 items-center text-center md:gap-5">
+				<motion.article
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true }}
+					transition={{ duration: 0.6 }}
+					variants={skillsMotion}
+					className="grid grid-cols-2 gap-3 items-center text-center md:gap-5">
 					<div className="flex items-center gap-2">
 						<IconBxlReact className="text-2xl xsl:text-4xl md:text-6xl" />
 						<p className="xsl:text-lg md:text-2xl">
@@ -85,7 +97,7 @@ function MySkills({ skillsText }) {
 							{skillsText[0].fourthSkill}
 						</p>
 					</div>
-				</article>
+				</motion.article>
 				<div className="flex justify-center py-10">
 					<BtnResume />
 				</div>

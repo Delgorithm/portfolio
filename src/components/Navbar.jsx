@@ -1,11 +1,12 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
-import { motion } from "framer-motion";
 
 function Navbar({ navbarText, hamburgerText, handleOpen, isOpen }) {
 	return (
 		<nav className="fixed flex items-center justify-between xxs:px-4 xxs:py-1 md:py-6 xl:px-10 bg-pampas w-full rounded-b-xl shadow-lg z-20 transform transition ease-in-out delay-150">
-			<p className="text-2xl md:text-4xl">{navbarText[0].title}</p>
+			<a href="#about" className="text-2xl md:text-4xl">
+				{navbarText[0].title}
+			</a>
 			<ul className="xxs:hidden xl:flex">
 				<li>
 					<a href="#about" className="text-3xl font-thin">
